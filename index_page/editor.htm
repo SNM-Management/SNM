@@ -1,0 +1,77 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Sl No</title>
+</head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<body>
+
+<p align="right">
+<script>
+$(function() {
+  $("#filter").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#outputTable > tbody > tr").filter(function() {      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<body>
+
+</body><a href="../edition_details/history.back()">
+<img onclick="history.back()" border="0" src="../image/left_arrow.jpg" width="32" height="30" align="right"></a><body>
+</p>
+    	<div class="form-group">
+    <p style="text-align: center">
+    <label for="filter" style="display: block; margin-top: 10px">Search:</label>
+	<input id="filter" style="width: 200px; border-radius: 4px; float: centre; border: 1px solid #ccc; margin-top: 5px; padding: 8px" name="T1" size="20">
+  </p></div>
+
+<p><b><font face="Verdana" size="5">EDITOR</font></b></p>
+
+</body>
+
+  	<p align="center">
+	&nbsp;</p>
+	<p align="center">
+	<img border="0" src="../image/editor.jpg" width="467" height="292"></p>
+	
+</body>
+
+</html>
