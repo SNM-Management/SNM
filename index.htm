@@ -4,6 +4,7 @@
 <title>Editorial Management Systems</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../SNM24/w3.css">
 <style>
 * {
   box-sizing: border-box;
@@ -66,6 +67,13 @@ body {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
+
+  padding: 20px;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.sidec {
   -ms-flex: 30%; /* IE10 */
   flex: 10%;
   background-color: #f1f1f1;
@@ -136,6 +144,60 @@ body {
   height: 100%;
 }
 </style>
+
+
+
+
+
+
+
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidec a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidec a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidec a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidec {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidec a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidec a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+
 </head>
 <body>
 
@@ -158,44 +220,33 @@ body {
 
 <div class="row">
   <div class="side">
-    <div class="fakeimg" style="height:200px;">
+    <div class="fakeimg" style="height:224px;">
 		<a href="image/graph_enlarge.png">
-		<img border="0" src="image/graph.jpg" width="310" height="159"></a></div>
-    <p>Total Strength Graph</p>
-	<h3>MENU</h3>
-    <div class="fakeimg" style="height:60px;">
-		<a style="text-decoration: none; color: #000000" target="edition" href="edition_details/edition_details_main.htm">Edition</a></div><br>
+		<img border="0" src="../SNM24/image/graph.jpg" width="310" height="185"></a></div>
+		<p>Total Strength Graph</p>
+		
+	<div class="sidec" style="width: 338px; height: 700px">
+	<a class="active" target="edition" href="edition_details/edition_details_main.htm">Edition</a>
+	<a class="w3-bar-item w3-button w3-border-bottom" target="edition" href="index_page/editor.htm">Editor</a>
+	<a class="w3-bar-item w3-button w3-border-bottom" 16px" target="edition" href="index_page/sub-editor_inner.htm">Dy /Sr/ Sub_Editors</a>
+	<a class="w3-bar-item w3-button w3-border-bottom" target="edition" href="index_page/edition_head.htm">Edition I/c</a>
+	<a class="w3-bar-item w3-button w3-border-bottom" target="edition" href="index_page/dc_inner.htm">District Correspondents</a>
+	<a class="w3-bar-item w3-button w3-border-bottom" target="edition" href="index_page/reporters_inner.htm">Staff Reporters</a>
+	<a class="w3-bar-item w3-button w3-border-bottom" target="edition" href="index_page/contributors_inner.htm">News Contributors</a>
+	<a class="w3-bar-item w3-button w3-border-bottom" target="edition" href="index_page/photo_inner.htm">Photographers</a>
+	<a class="w3-bar-item w3-button w3-border-bottom" target="edition" href="index_page/proof_inner.htm">Proof Readers</a>
+	<a class="w3-bar-item w3-button w3-border-bottom" target="edition" href="index_page/dtp_inner.htm">System Operator (DTP)</a>
+	<a class="w3-bar-item w3-button w3-border-bottom" target="edition" href="index_page/designer_inner.htm">Designer/ Artist/ Cartoonist</a>
+</div>
 
-    <div class="fakeimg" style="height:60px;">
-		<a style="text-decoration: none; color: #000000" target="edition" href="index_page/editor.htm">Editor</a></div><br>
-    <div class="fakeimg" style="height:60px;">
-		<a style="text-decoration: none; color: #000000" target="edition" href="index_page/sub-editor_inner.htm">Dy / Sr / Sub-Editor</a></div><br>
-	<div class="fakeimg" style="height:60px;">
-		<a style="text-decoration: none; color: #000000" target="edition" href="index_page/edition_head.htm">Edition I/C</a></div><br>	
-    <div class="fakeimg" style="height:60px;">
-		<a style="color: #000000; text-decoration: none" target="edition" href="index_page/dc_inner.htm">
-		<span style="color: #000000; text-decoration: none">District 
-		Correspondent</span></a></div><br>
-    <div class="fakeimg" style="height:60px;">
-		<a style="color: #000000; text-decoration: none" target="edition" href="index_page/reporters_inner.htm">
-		<span style="color: #000000; text-decoration: none">Staff Reporters</span></a></div><br>
-    <div class="fakeimg" style="height:60px;">
-    		<a style="color: #000000; text-decoration: none" target="edition" href="index_page/contributors_inner.htm">
-		<span style="color: #000000; text-decoration: none">News Contributors</span></a></div><br>
-    <div class="fakeimg" style="height:60px;">
-		<a style="color: #000000; text-decoration: none" target="edition" href="index_page/photo_inner.htm">
-		<span style="color: #000000; text-decoration: none">Photographer</span></a></div><br>
-	<div class="fakeimg" style="height:60px;">
-		<a style="color: #000000; text-decoration: none" target="edition" href="index_page/proof_inner.htm">
-		<span style="color: #000000; text-decoration: none">Proof Readers</span></a></div><br>
-  </div>
+&nbsp;</div>
   <div class="main">
     <div class="fakeimg" style="height:1170px; background-color:#FFFFFF">
 		<div class="wrapper">
   <div class="h_iframe">
     <!-- a transparent image is preferable -->
-    <img class="ratio" src="http://www.brightontheday.com/wp-content/uploads/2013/07/placeholder300.png" width="100%" height="1801" />
-    <iframe frameborder='0' width='100%' scrolling='no' src='index_page/dashmenu.htm' frameborder="0" allowfullscreen name="edition" style="position: absolute; left: 0; top: 0; height: 1219px"></iframe>
+    <img class="ratio" src="" width="100%" height="1801" />
+    <iframe frameborder='0' width='100%' src='index_page/dashmenu.htm' frameborder="0" allowfullscreen name="edition" style="position: absolute; left: 0; top: 0; height: 1219px"></iframe>
   </div>
 </div></div>
     <p>&nbsp;</p>

@@ -28,7 +28,7 @@
   float: left;
   width: 05%;
   padding: 10px;
-  height: 540px; /* Should be removed. Only for demonstration */
+  height: 140px; /* Should be removed. Only for demonstration */
 }
 
 -->
@@ -56,85 +56,56 @@
 </style>
 
 <style>
-* {
-  box-sizing: border-box;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 992px) {
-  .column {
-    width: 50%;
-  }
-}
-
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+#smallbox {
+    cursor: pointer;
 }
 </style>
+
 </head>
 
 <body>
 
   <div class="main">
     <h2>DASH BOARD</h2>
-    <div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2 align="center">Main /&nbsp;&nbsp;&nbsp;&nbsp; Split Edition</h2>
-    <p align="center"><b><font size="7" color="#FF0000">08 /&nbsp;&nbsp;&nbsp;&nbsp; 
-	15</font></b></p>
+    <div class="fakeimg" style="height:195px; background-color:#99CCFF"></h2>
+
+<div class="row">
+  <div onclick="window.open('SNM/delete/dashmenu.htm');" class="column" style= "cursor: pointer; background-color:#aaa;float:left; margin: 5px;">
+    <h2 align="center"><font color="#0000FF">Edition/Split</font></h2>
+    <p align="center"><font size="7" color="#FF0000">08/20</font></p>
   </div>
-  
-  <div class="column" style="background-color:#bbb;">
-    <h2 align="center">Sub-Editors</h2>
-	<p align="center"><font size="7" color="#FF0000"><b>85</b></font></p>
+  <div class="column" style="background-color:#bbb; float:left; margin: 5px; ">
+    <h2 align="center"><font color="#0000FF">DC</font></h2>
+    <p align="center"><font size="7">22</font></p>
   </div>
-  
-  <div class="column" style="background-color:#ccc;">
-    <h2 align="center">DC</h2>
-    <p align="center"><font size="7" color="#FF0000"><b>12</b></font></div>
-  
-  <div class="column" style="background-color:#ddd;">
-    <h2 align="center">News Contributors</h2>
-    <p align="center"><font size="7" color="#FF0000"><b>132</b></font></p>
-  </div>  </div>
-  &nbsp;<div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2 align="center">Staff Reporters</h2>
-    <p align="center"><font size="7" color="#FF0000"><b>3</b></font></div>
-  
-  <div class="column" style="background-color:#bbb;">
-    <h2 align="center">Photographers</h2>
-    <p align="center"><font size="7" color="#FF0000"><b>6</b></font></p>
+  <div class="column" style="background-color:#ccc;float:left; margin: 5px; ">
+    <h2 align="center"><font color="#0000FF">Sub Editor</font></h2>
+    <p align="center"><font size="7">14</font></p>
   </div>
-  
-  <div class="column" style="background-color:#ccc;">
-    <h2 align="center">DTP Operators</h2>
-    <p align="center"><font size="7" color="#FF0000"><b>45</b></font></p>
+  <div class="column" style="background-color:#ddd;float:left; margin: 5px; ">
+    <h2 align="center"><font color="#0000FF">Reporters</font></h2>
+    <p align="center"><font size="7">14</font></p>
   </div>
-  
-  <div class="column" style="background-color:#ddd;">
-    <h2 align="center">Proof Readers</h2>
-    <p align="center"><font size="7" color="#FF0000"><b>3</b></font></p>
-  </div>  </div>  </div><br>
-</div><br></div><h2>SPECIAL PAGES</h2>
-    <iframe class="fakeimg" style="height:660px; background-color:#DDDDDD" src="../splpage/splpage_main.htm" name="spl" border="0" frameborder="0">
+  <div class="column" style="background-color:#ddd;float:left; margin: 5px; ">
+    <h2 align="center"><font color="#0000FF">Contributors</font></h2>
+    <p align="center"><font size="7">14</font></p>
+  </div>
+  <div class="column" style="background-color:#ddd;float:left; margin: 5px; ">
+    <h2 align="center"><font color="#0000FF">ProofReaders</font></h2>
+    <p align="center"><font size="7">14</font></p>
+  </div>
+
+<div class="column" style="background-color:#ddd;float:left; margin: 5px; ">
+    <h2 align="center"><font color="#0000FF">Photographers</font></h2>
+    <p align="center"><font size="7">14</font></p>
+  </div>
+
+
+</div>	
+		<p>&nbsp;</div>
+    <p>...</p>
+&nbsp;<h2>SPECIAL PAGES</h2>
+    <div class="fakeimg" style="height:660px; background-color:#DDDDDD">
 		<table border="0" width="100%" style="box-sizing: border-box">
 			<tbody style="box-sizing: border-box">
 			<tr style="box-sizing: border-box">
@@ -150,8 +121,7 @@
 			<tr style="box-sizing: border-box">
 				<td style="box-sizing: border-box">
 				<p align="center">
-				<a target="_self" href="dc_inner.htm">
-				<img border="0" src="../image/youth.jpg" width="275" height="183"></a></td>
+				<img border="0" src="../image/youth.jpg" width="275" height="183"></td>
 				<td style="box-sizing: border-box">&nbsp;</td>
 				<td style="box-sizing: border-box">
 				<p align="center">

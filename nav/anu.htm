@@ -1,39 +1,19 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>Sl No</title>
-</head>
-<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-</style>
-
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
   box-sizing: border-box;
 }
 
-/* Create four equal columns that floats next to each other */
+/* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 30%;
+  width: 33.33%;
   padding: 10px;
-  height: 240px; /* Should be removed. Only for demonstration */
+  margin-left: 5px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */
@@ -42,36 +22,42 @@ tr:nth-child(even) {
   display: table;
   clear: both;
 }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+   
+  }
+}
 </style>
+</head>
 <body>
 
-  	<p><font face="Verdana" size="5"><b>Angul</b></font></p>
-
-  	&nbsp;</h2>
+<h2>Angul</h2>
 
 <div class="row">
-  <div class="column" style="background-color:#CD5C5C;float:left; margin: 15px; ">
-    <h2 align="center"><font color="#FFFFFF">Total Staff&nbsp;&nbsp;&nbsp; 
-	</font> </h2>
-    <p align="center"><font size="7" color="#FFFFFF">05</font></p>
+  <div class="column" style="background-color:#aaa;">
+    <h2>Total Staff</h2>
+    <p>Some text..</p>
   </div>
-  <div class="column" style="background-color:#CD5C5C; float:left; margin: 15px; ">
-    <h2 align="center"><font color="#FFFFFF">Circulation</font></h2>
-	<p align="center"><font size="7" color="#FFFFFF">6022</font></p>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Circulation</h2>
+    <p>Some text..</p>
   </div>
-  <div class="column" style="background-color:#CD5C5C;float:left; margin: 15px; ">
-    <h2 align="center"><font color="#FFFFFF">Advertisement</font></h2>
-    <h4 align="center"><font size="7" color="#FFFFFF">--</font></h4>
-  </div> 
+  <div class="column" style="background-color:#ccc;">
+    <h2>Advertisement</h2>
+    <p>Some text..</p>
+  </div>
+</div>
 
-
-</div>	
-<br>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 	<h2>Edition :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 	Print Edition</h2>
 	<h2>Printing at :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 	Cuttack</h2>
 	<h2>Printing Time :&nbsp;&nbsp;&nbsp;&nbsp; 10 P.M.</h2>
-</body>
 
+</body>
 </html>
