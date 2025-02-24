@@ -3,23 +3,50 @@
 <head>
 <meta http-equiv="Content-Language" content="en-us">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>Sl No</title>
-<style>
-<!--
+<title>System Operator (DTP)</title>
+<script src="../Offday%20List_files/jquery.min.js"></script>
+  </head><body>
+<p align="right">
+<script>
+$(function() {
+  $("#filter").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#outputTable > tbody > tr").filter(function() {      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
 
-* {
-  box-sizing: border-box;
+</head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
--->
-</style>
-</head>
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
 
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
 <body>
 
-		<p><b><font size="5">System Operator</font></b></p>
+</body><a href="history.back()">
+<img onclick="history.back()" border="0" src="../image/left_arrow.jpg" width="32" height="30" align="right"></a><body>
+</p>
+    	<div class="form-group">
+    <p style="text-align: center">
+    <label for="filter" style="display: block; margin-top: 10px">Search:</label>
+	<input id="filter" style="width: 200px; border-radius: 4px; float: centre; border: 1px solid #ccc; margin-top: 5px; padding: 8px" name="T1" size="20">
+  </p></div>
 
-		<table border="1" contenteditable="true" width="55%" style="font-family: arial, vardana, sans-serif; border-collapse: collapse; width: 100%; box-sizing:border-box" cellpadding="2">
+<table id="outputTable" border="1"  width="55%" style="font-family: arial, vardana, sans-serif; border-collapse: collapse; width: 100%; box-sizing:border-box" cellpadding="2">
 			<tbody style="box-sizing: border-box">
 			<tr style="box-sizing: border-box">
 				<td width="98" bgcolor="#008000" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
@@ -32,16 +59,17 @@
 				<td bgcolor="#008000" width="351" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				<font color="#FFFFFF" style="box-sizing: border-box; font-weight:700">Edition</font></td>
 				<td bgcolor="#008000" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font color="#FFFFFF" face="Verdana"><b>Work 
+				<font color="#FFFFFF" face="Verdana" style="box-sizing: border-box">
+				<b style="box-sizing: border-box">Work 
 		Assignment</b></font></td>
 				<td bgcolor="#008000" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<b>
-				<font color="#FFFFFF">P/C</font></b></td>
+				<b style="box-sizing: border-box">
+				<font color="#FFFFFF" style="box-sizing: border-box">P/C</font></b></td>
 			</tr>
-			<tr>
+			<tr style="box-sizing: border-box">
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box" bgcolor="#800000">
-				<font color="#FFFFFF">
-				<b>Cuttack</b></font></td>
+				<font color="#FFFFFF" style="box-sizing: border-box">
+				<b style="box-sizing: border-box">Cuttack</b></font></td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				&nbsp;</td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
@@ -53,7 +81,7 @@
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				P</td>
 			</tr>
-			<tr>
+			<tr style="box-sizing: border-box">
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				01.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
@@ -67,7 +95,7 @@
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				P</td>
 			</tr>
-			<tr>
+			<tr style="box-sizing: border-box">
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				02.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
@@ -81,7 +109,7 @@
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				P</td>
 			</tr>
-			<tr>
+			<tr style="box-sizing: border-box">
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				03.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
@@ -95,7 +123,7 @@
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				P</td>
 			</tr>
-			<tr>
+			<tr style="box-sizing: border-box">
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				04.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
@@ -109,7 +137,7 @@
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				P</td>
 			</tr>
-			<tr>
+			<tr style="box-sizing: border-box">
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				05.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
@@ -279,8 +307,8 @@
 			</tr>
 			<tr style="box-sizing: border-box">
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box" bgcolor="#800000">
-				<font color="#FFFFFF">
-				<b>Bhubaneswar</b></font></td>
+				<font color="#FFFFFF" style="box-sizing: border-box">
+				<b style="box-sizing: border-box">Bhubaneswar</b></font></td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				&nbsp;</td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
@@ -300,9 +328,9 @@
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				DTP Operator</td>
 				<td width="351" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Bhubaneswar</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Bhubaneswar</font></td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">City Page&nbsp; (Two) /News Dispatch &amp; Register 
+				<font face="Verdana" style="box-sizing: border-box">City Page&nbsp; (Two) /News Dispatch &amp; Register 
 				/ System Maintenance</font></td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				P</td>
@@ -311,13 +339,13 @@
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				02.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Pratap Mekap</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Pratap Mekap</font></td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				DTP Operator</td>
 				<td width="351" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Bhubaneswar</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Bhubaneswar</font></td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Peri and City Page Layout (Three)</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Peri and City Page Layout (Three)</font></td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				C</td>
 			</tr>
@@ -325,13 +353,13 @@
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				03.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Sasmita Mallik</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Sasmita Mallik</font></td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				DTP Operator</td>
 				<td width="351" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Bhubaneswar</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Bhubaneswar</font></td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Peri and City Page Layout (Three)</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Peri and City Page Layout (Three)</font></td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				C</td>
 			</tr>
@@ -339,20 +367,20 @@
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				04.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Laxmidhara Sahoo</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Laxmidhara Sahoo</font></td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				DTP Operator</td>
 				<td width="351" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Bhubaneswar</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Bhubaneswar</font></td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Peri&nbsp; Page Layout (Two)</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Peri&nbsp; Page Layout (Two)</font></td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				P</td>
 			</tr>
 			<tr style="box-sizing: border-box">
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box" bgcolor="#800000">
-				<font color="#FFFFFF">
-				<b>Berhampur</b></font></td>
+				<font color="#FFFFFF" style="box-sizing: border-box">
+				<b style="box-sizing: border-box">Berhampur</b></font></td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				&nbsp;</td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
@@ -368,28 +396,28 @@
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				01.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Jitendra Kumar Pattnaik</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Jitendra Kumar Pattnaik</font></td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">System Operator</font></td>
+				<font face="Verdana" style="box-sizing: border-box">System Operator</font></td>
 				<td width="351" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				Berhampur</td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Advertisement Design/Supplement Page/<br>
+				<font face="Verdana" style="box-sizing: border-box">Advertisement Design/Supplement Page/<br style="box-sizing: border-box">
 				News Download and Page Layout</font></td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				C</td>
 			</tr>
 			<tr style="box-sizing: border-box">
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				03.</td>
+				02.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">K. Banita Reddy</font></td>
+				<font face="Verdana" style="box-sizing: border-box">K. Banita Reddy</font></td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">System Operator (Trainee)</font></td>
+				<font face="Verdana" style="box-sizing: border-box">System Operator (Trainee)</font></td>
 				<td width="351" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				Berhampur</td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Advertisement Design/ News Download</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Advertisement Design/ News Download</font></td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				C</td>
 			</tr>
@@ -397,9 +425,9 @@
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				03.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Sankar Prasad Mishra</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Sankar Prasad Mishra</font></td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">DTP Operator</font></td>
+				<font face="Verdana" style="box-sizing: border-box">DTP Operator</font></td>
 				<td width="351" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				Berhampur</td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
@@ -409,8 +437,8 @@
 			</tr>
 			<tr style="box-sizing: border-box">
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box" bgcolor="#800000">
-				<font color="#FFFFFF">
-				<b>Baleswar</b></font></td>
+				<font color="#FFFFFF" style="box-sizing: border-box">
+				<b style="box-sizing: border-box">Baleswar</b></font></td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				&nbsp;</td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
@@ -426,13 +454,13 @@
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				01.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Dillip Kumar Parida</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Dillip Kumar Parida</font></td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">DTP Operator</font></td>
+				<font face="Verdana" style="box-sizing: border-box">DTP Operator</font></td>
 				<td width="351" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				Baleswar</td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Advt</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Advt</font></td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				C</td>
 			</tr>
@@ -440,9 +468,9 @@
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				02.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Sanjeev Kumar Jena</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Sanjeev Kumar Jena</font></td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">DTP Operator</font></td>
+				<font face="Verdana" style="box-sizing: border-box">DTP Operator</font></td>
 				<td width="351" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				Baleswar</td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
@@ -450,13 +478,13 @@
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				C</td>
 			</tr>
-			<tr>
+			<tr style="box-sizing: border-box">
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				03.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Sankar Prasad Mishra</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Sankar Prasad Mishra</font></td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">DTP Operator</font></td>
+				<font face="Verdana" style="box-sizing: border-box">DTP Operator</font></td>
 				<td width="351" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				Baleswar</td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
@@ -468,9 +496,9 @@
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				04.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Ajaya Sarangi</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Ajaya Sarangi</font></td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">DTP Operator</font></td>
+				<font face="Verdana" style="box-sizing: border-box">DTP Operator</font></td>
 				<td width="351" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				Baleswar</td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
@@ -480,8 +508,8 @@
 			</tr>
 			<tr style="box-sizing: border-box">
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box" bgcolor="#800000">
-				<font color="#FFFFFF">
-				<b>Koraput</b></font></td>
+				<font color="#FFFFFF" style="box-sizing: border-box">
+				<b style="box-sizing: border-box">Koraput</b></font></td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				&nbsp;</td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
@@ -497,13 +525,13 @@
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				01.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Gauri Kumar Tripathy</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Gauri Kumar Tripathy</font></td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">DTP Operator</font></td>
+				<font face="Verdana" style="box-sizing: border-box">DTP Operator</font></td>
 				<td width="351" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				Koraput</td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Download news from mail of two District, 
+				<font face="Verdana" style="box-sizing: border-box">Download news from mail of two District, 
 		Layouts 2 to 3 Pages, Sometimes Layouts of Advertisement</font></td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				-</td>
@@ -512,21 +540,21 @@
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				02.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Prasant Kumar Sethy</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Prasant Kumar Sethy</font></td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">DTP Operator</font></td>
+				<font face="Verdana" style="box-sizing: border-box">DTP Operator</font></td>
 				<td width="351" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				Koraput</td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Download news from mail of two District, 
+				<font face="Verdana" style="box-sizing: border-box">Download news from mail of two District, 
 		Layouts 2 to 3 Pages, Sometimes Layouts of Advertisement</font></td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				-</td>
 			</tr>
 			<tr style="box-sizing: border-box">
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box" bgcolor="#800000">
-				<font color="#FFFFFF">
-				<b>Sambalpur</b></font></td>
+				<font color="#FFFFFF" style="box-sizing: border-box">
+				<b style="box-sizing: border-box">Sambalpur</b></font></td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				&nbsp;</td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
@@ -540,45 +568,45 @@
 			</tr>
 			<tr style="box-sizing: border-box">
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				&nbsp;</td>
+				01.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Gynaprakash Pati</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Gynaprakash Pati</font></td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">DTP Operator I/C</font></td>
+				<font face="Verdana" style="box-sizing: border-box">DTP Operator I/C</font></td>
 				<td width="351" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				Sambalpur</td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Page Download from Cuttack Office, Page Layout</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Page Download from Cuttack Office, Page Layout</font></td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				&nbsp;</td>
 			</tr>
 			<tr style="box-sizing: border-box">
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				&nbsp;</td>
+				02.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Sushanta Satapathy</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Sushanta Satapathy</font></td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">System Operator 
+				<font face="Verdana" style="box-sizing: border-box">System Operator 
 		(DTP)</font></td>
 				<td width="351" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				Sambalpur</td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Page Download from Cuttack Office, Page Layout</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Page Download from Cuttack Office, Page Layout</font></td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				P</td>
 			</tr>
 			<tr style="box-sizing: border-box">
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				&nbsp;</td>
+				03.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Sushant Rout</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Sushant Rout</font></td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Layout Designer 
+				<font face="Verdana" style="box-sizing: border-box">Layout Designer 
 		(DTP)</font></td>
 				<td width="351" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				Sambalpur</td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				<font face="Verdana">Advertisement &amp; Sambalpur Page Layout</font></td>
+				<font face="Verdana" style="box-sizing: border-box">Advertisement &amp; Sambalpur Page Layout</font></td>
 				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				P</td>
 			</tr>
@@ -598,8 +626,22 @@
 			</tr>
 			<tr style="box-sizing: border-box">
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box" bgcolor="#800000">
-				<font color="#FFFFFF">
-				<b>Rourkela</b></font></td>
+				<font color="#FFFFFF" style="box-sizing: border-box">
+				<b style="box-sizing: border-box">Rourkela</b></font></td>
+				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
+		&nbsp;</td>
+				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
+		&nbsp;</td>
+				<td width="351" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
+				&nbsp;</td>
+				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
+		&nbsp;</td>
+				<td style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
+				&nbsp;</td>
+			</tr>
+			<tr style="box-sizing: border-box">
+				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
+				01.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 		Sharat Das</td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
@@ -613,7 +655,7 @@
 			</tr>
 			<tr style="box-sizing: border-box">
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
-				&nbsp;</td>
+				02.</td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 		Sibansh Lenka</td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
@@ -641,8 +683,8 @@
 			</tr>
 			<tr style="box-sizing: border-box">
 				<td width="98" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box" bgcolor="#800000">
-				<font color="#FFFFFF">
-				<b>Angul</b></font></td>
+				<font color="#FFFFFF" style="box-sizing: border-box">
+				<b style="box-sizing: border-box">Angul</b></font></td>
 				<td width="294" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
 				&nbsp;</td>
 				<td width="265" style="text-align: left; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box">
@@ -670,13 +712,9 @@
 			</tr>
 		</table>
 	
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-	
+<p><font face="Verdana">P=Permanent C=Contractual</font></p>
+<p>&nbsp;</p>
+
 </body>
 
 </html>
