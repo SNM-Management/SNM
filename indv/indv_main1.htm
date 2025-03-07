@@ -1,0 +1,127 @@
+<html>
+
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+</style>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>indv_main</title>
+<script src="../Offday%20List_files/jquery.min.js"></script>
+  </head><body>
+<body>
+<p align="right">
+<script>
+$(function() {
+  $("#filter").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#outputTable > tbody > tr").filter(function() {      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<script>
+  // Resize iframe to full height
+  function resizeIframe(height)
+  {
+// "+60" is a general rule of thumb to allow for differences in
+// IE & and FF height reporting, can be adjusted as required..
+document.getElementById('iframe').height = parseInt(height)+60;
+  }
+</script>
+
+
+</head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+</style>
+<body>
+
+</body><a href="history.back()">
+<img onclick="history.back()" border="0" src="../image/left_arrow.jpg" width="32" height="30" align="right"></a><body>
+</p>
+
+		<p><b style="box-sizing: border-box">
+		<font face="Verdana" size="5" style="box-sizing: border-box">Edition 
+		wise Contributors details</font></b></p>
+
+		<table border="0" style="font-family: arial, vardana, sans-serif; border-collapse: collapse; width: 97%; box-sizing:border-box">
+			<tbody style="box-sizing: border-box">
+			<tr style="box-sizing: border-box">
+				<td width="98" style="text-align: center; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box" bgcolor="#FF0000">
+				<b><a target="I1" href="anu_inv.htm"><font color="#FFFFFF">Angul</font></a></b></td>
+				<td width="154" style="text-align: center; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box" bgcolor="#FF0000">
+				<font color="#FFFFFF">
+				<b><a target="I1" href="bls_inv.htm"><font color="#FFFFFF">Baleswar</font></a></b></font></td>
+				<td width="220" style="text-align: center; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box" bgcolor="#FF0000">
+				<font color="#FFFFFF">
+				<b><a target="I1" href="bbsr_inv.htm"><font color="#FFFFFF">Bhubaneswar</font></a></b></font></td>
+				<td width="211" style="text-align: center; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box" bgcolor="#FF0000">
+				<p style="text-align: center"><b><font color="#FFFFFF">
+				<a target="I1" href="bmpr_inv.htm"><font color="#FFFFFF">Berhampur</font></a></font></b></td>
+				<td style="text-align: center; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box" bgcolor="#FF0000">
+				<b><font color="#FFFFFF"><a target="I1" href="ctc_inv.htm">
+				<font color="#FFFFFF">Cuttack</font></a></font></b></td>
+				<td style="text-align: center; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box" bgcolor="#FF0000">
+				<font color="#FFFFFF"><b>
+				<a target="I1" href="rkl_inv.htm"><font color="#FFFFFF">Rourkela</font></a></b></font></td>
+				<td style="text-align: center; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box" bgcolor="#FF0000">
+				<font color="#FFFFFF"><b><a target="I1" href="kpt_inv.htm">
+				<font color="#FFFFFF">Koraput</font></a></b></font></td>
+				<td style="text-align: center; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box" bgcolor="#FF0000">
+				<font color="#FFFFFF"><b><a target="I1" href="kol_inv.htm">
+				<font color="#FFFFFF">Kolkata</font></a></b></font></td>
+				<td style="text-align: center; border: 1px solid #dddddd; padding: 8px; box-sizing:border-box" bgcolor="#FF0000">
+				<font color="#FFFFFF"><b><a target="I1" href="sbp_inv.htm">
+				<font color="#FFFFFF">Sambalpur</font></a></b></font></td>
+			</tr>
+			</table>
+	
+</body>
+
+<p>
+
+<body onload="iframeResizePipe()">
+<iframe id="helpframe" src='' height='82' width='90' frameborder='0' name="I1"> </iframe>
+
+  <script type="text/javascript">
+  function iframeResizePipe()
+ {
+            // What's the page height?
+     var height = document.body.scrollHeight;
+
+ // Going to 'pipe' the data to the parent through the helpframe..
+ var pipe = document.getElementById('helpframe');
+
+ // Cachebuster a precaution here to stop browser caching interfering
+ pipe.src = 'http://www.foo.com/helper.html?height='+height+'&cacheb='+Math.random();
+
+  }
+</script>
+
+
+</p>
+
+</body>
+
+</html>

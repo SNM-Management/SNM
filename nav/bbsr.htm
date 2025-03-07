@@ -1,56 +1,76 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>Sl No</title>
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+* {
+  box-sizing: border-box;
 }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 32.33%;
+  padding: 5px;
+  margin-left: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+   
+  }
 }
 </style>
+</head>
 <body>
 
-  	<p><b><font face="Verdana" size="5">BBSR</font></b></p>
+<h2><font face="Verdana">Bhubaneswar</font></h2>
 
-<div style="width:100%; height: 200px; background-color: grey;">
-  <div style="width: 400px; float:left; margin: 5px; background-color: red; height:209px">A<p>
-	s</p>
-	<p>s</p>
-	<p>s</p>
-	<p>s</p>
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2 align="center"><font face="Verdana" size="6" color="#FF0000">Edition</font></h2>
+    <p align="center"><b><font face="Verdana" size="5">BBSR City, Khorda, Puri, 
+	Nayagarh<br>
+	Printing at : Cuttack</font></b></p>
+	<p align="center"><b><font face="Verdana" size="5" color="#FFFFFF">
+	<span style="background-color: #FF0000">&nbsp;Printing Time </span></font></b></p>
+	<p align="center"><b><font face="Verdana" size="4">Nayagarh : 12.30 A.M., 
+	Khorda : 01.00 A.M.<br>
+	Puri : 01.30 A.M. BBSR City : 02.10 A.M.</font></b></p>
+	<p align="center">&nbsp;</div>
+  <div class="column" style="background-color:#bbb;">
+    <h2 align="center"><font face="Verdana" size="6" color="#FF0000">Office 
+	Staff</font></h2>
+	<h2 align="center"><font face="Verdana" size="6">Sub-Editors :</font><b><font face="Verdana" size="7"> 
+	07<br>
+	</font></b><font face="Verdana" size="6">Reporters : </font><b>
+	<font face="Verdana" size="7">07<br>
+	</font><font face="Verdana" size="6">DTP Operator</font></b><font face="Verdana" size="6"> 
+	: </font><b><font face="Verdana" size="7">04</font></b></h2>
 	<p>&nbsp;</div>
-  <div style="width: 25%; float:left; margin: 5px; background-color: orange;">B<p>
-	s</p>
-	<p>s</p>
-	<p>s</p>
-	<p>s</p>
-	<p>&nbsp;</div>
-  <div style="width: 25%; float:left; margin: 5px; background-color: green;">s<p>
-	s</p>
-	<p>s</p>
-	<p>s</p>
-	<p>s</p>
-	<p>&nbsp;</div>
-  <div style="width: 470px; float:left; margin: 5px; background-color: blue; height:19px">D<p>&nbsp;</p>
-	<p>&nbsp;</p>
-	<p>&nbsp;</p>
-	<p>&nbsp;</p>
-	<p>&nbsp;</div>
+  <div class="column" style="background-color:#ccc;">
+    <p align="center"><b><font face="Verdana" size="6" color="#FF0000">News 
+	Contributors</font></b></p>
+	<p align="center"><b><font face="Verdana" size="7">42</font></b></p>
+	<h2 align="center"><font face="Verdana" size="6" color="#FF0000">
+	Photographer</font></h2>
+	<p align="center"><b><font face="Verdana" size="7">04</font></b></p>
+	<p align="center">&nbsp;</div>
 </div>
-	
-</body>
 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+	<h2><font face="Verdana" size="3">-</font></h2>
+
+</body>
 </html>

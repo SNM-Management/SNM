@@ -1,0 +1,124 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script src="../js/jquery.min.js"></script>
+<title>div_head_proofreaders</title>
+</head>
+
+    	<div class="form-group">
+<p align="right">
+<script>
+$(function() {
+  $("#filter").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#outputTable > tbody > tr").filter(function() {      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<body>
+
+</body><a href="../edition_details/history.back()">
+<img onclick="history.back()" border="0" src="../image/left_arrow.jpg" width="32" height="30" align="right"></a><body>
+</p>
+    	<div class="form-group">
+    <p style="text-align: center">
+    <label for="filter" style="display: block; margin-top: 10px">Search:</label>
+	<input id="filter" style="width: 200px; border-radius: 4px; float: centre; border: 1px solid #ccc; margin-top: 5px; padding: 8px" name="T1" size="20">
+  </p></div>
+
+<p><b><font face="Verdana" size="5">Proof Readers</font></b></p>
+
+</body>
+
+		</div>
+
+	<table id="outputTable" border="1" width="100%" style="font-family: arial, sans-serif; border-collapse: collapse; width: 100%">
+		<tr>
+			<td bgcolor="#008080" style="text-align: left; border: 1px solid #dddddd; padding: 8px">
+			<b>
+			<font face="Verdana" color="#FFFFFF" size="5">Edition/Split Edition</font></b></td>
+			<td bgcolor="#008080" style="text-align: left; border: 1px solid #dddddd; padding: 8px">
+			<b><font face="Verdana" size="5" color="#FFFFFF">Strength</font></b></td>
+		</tr>
+		<tr>
+			<td style="text-align: left; border: 1px solid #dddddd; padding: 8px">
+			<font face="Verdana" size="6">Cuttack</font></td>
+			<td style="text-align: left; border: 1px solid #dddddd; padding: 8px">
+			<font face="Verdana" size="6">03</font></td>
+		</tr>
+		<tr>
+			<td style="text-align: left; border: 1px solid #dddddd; padding: 8px">
+			<font face="Verdana" size="6">Bhubaneswar</font></td>
+			<td style="text-align: left; border: 1px solid #dddddd; padding: 8px">
+			<font face="Verdana" size="6">01</font></td>
+		</tr>
+		<tr>
+			<td style="text-align: left; border: 1px solid #dddddd; padding: 8px">
+			<font face="Verdana" size="6">Baleswar</font></td>
+			<td style="text-align: left; border: 1px solid #dddddd; padding: 8px">
+			<font face="Verdana" size="6">--</font></td>
+		</tr>
+		<tr>
+			<td style="text-align: left; border: 1px solid #dddddd; padding: 8px">
+			<font face="Verdana" size="6">Sambalpur</font></td>
+			<td style="text-align: left; border: 1px solid #dddddd; padding: 8px">
+			<font face="Verdana" size="6">--</font></td>
+		</tr>
+		<tr>
+			<td style="text-align: left; border: 1px solid #dddddd; padding: 8px">
+			<font face="Verdana" size="6">Rourkela</font></td>
+			<td style="text-align: left; border: 1px solid #dddddd; padding: 8px">
+			<font face="Verdana" size="6">--</font></td>
+		</tr>
+		<tr>
+			<td style="text-align: left; border: 1px solid #dddddd; padding: 8px">
+			<font face="Verdana" size="6">Koraput</font></td>
+			<td style="text-align: left; border: 1px solid #dddddd; padding: 8px">
+			<font face="Verdana" size="6">--</font></td>
+		</tr>
+		<tr>
+			<td style="text-align: left; border: 1px solid #dddddd; padding: 8px">
+			<font face="Verdana" size="6">Berhampur</font></td>
+			<td style="text-align: left; border: 1px solid #dddddd; padding: 8px">
+			<font face="Verdana" size="6">--</font></td>
+		</tr>
+		<tr>
+			<td style="text-align: left; border: 1px solid #dddddd; padding: 8px">
+			<font face="Verdana" size="6">Angul</font></td>
+			<td style="text-align: left; border: 1px solid #dddddd; padding: 8px">
+			<font face="Verdana" size="6">--</font></td>
+		</tr>
+		<tr>
+			<td style="text-align: left; border: 1px solid #dddddd; padding: 8px" bgcolor="#0000FF">
+			<font face="Verdana" size="6" color="#FFFFFF">Total </font></td>
+			<td style="text-align: left; border: 1px solid #dddddd; padding: 8px" bgcolor="#0000FF">
+			<font face="Verdana" size="6" color="#FFFFFF">
+			<span style="background-color: #800000">04</span></font></td>
+		</tr>
+	</table>
+	
+<p>&nbsp;</p>
+
+</html>
