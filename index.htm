@@ -197,7 +197,27 @@ div.content {
   }
 }
 </style>
-
+ <style>
+    blink {
+    animation: blinker 0.6s linear infinite;
+    color: red;
+}
+@keyframes blinker {  
+    30% { opacity: 0; }
+}
+.blink-one {
+    animation: blinker-one 1s linear infinite;
+}
+@keyframes blinker-one {  
+    0% { opacity: 0; }
+}
+.blink-two {
+    animation: blinker-two 1.4s linear infinite;
+}
+@keyframes blinker-two {  
+    100% { opacity: 0; }
+}
+</style>
 </head>
 <body>
 
@@ -208,6 +228,8 @@ div.content {
 
 <div class="navbar">
     <a href="index.htm" class="w3-bar-item w3-button w3-blue">Home</a> 
+    <b> 
+    <a button><font color="#FFFF00">Printing Data >></button></font></a></b>
     <a target="edition" href="nav/anu.htm">Angul</a>
 	<a target="edition" href="nav/bls.htm">BAL</a>
 	<a target="edition" href="nav/bbsr.htm">BBSR</a>
@@ -225,8 +247,13 @@ div.content {
     <div class="fakeimg" style="height:224px;">
 		<a target="edition" href="graph.htm">
 		<img border="0" src="image/graph.jpg" width="305" height="178"></a></div>
-		<p align="center">Editorial Strength Graph</p>
-	<p>&nbsp;</p>
+		<p align="center">Editorial Strength Graph</p> <hr>
+	<font color="#FF0000"></hr>
+    </font>
+    <h3 align="center">
+      <blink style="animation: blinker 0.6s linear infinite; color: #DC143C; font-weight:700">
+		<a target="edition" style="text-decoration: none" href="misc/retirement_inner.htm">
+		<font color="#FF0000">Alert</font></a></blink></h3>  
 		
 	<div class="sidec" style="width: 338px; height: 700px">
 	<a class="active" target="">MENU</a>
