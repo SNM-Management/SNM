@@ -1,0 +1,119 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>ews_portal</title>
+<script src="../js/jquery.min.js"></script>
+  </head><body>
+<p align="right">
+<script>
+$(function() {
+  $("#filter").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#outputTable > tbody > tr").filter(function() {      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<body>
+
+</body><a href="history.back()">
+<img onclick="history.back()" border="0" src="../image/left_arrow.jpg" width="32" height="30" align="right"></a><body>
+</p>
+    	<div class="form-group">
+    <p style="text-align: center">
+    <label for="filter" style="display: block; margin-top: 10px">Search:</label>
+	<input id="filter" style="width: 200px; border-radius: 4px; float: centre; border: 1px solid #ccc; margin-top: 5px; padding: 8px" name="T1" size="20">
+  </p></div>
+
+<p><b><font face="Verdana" size="5">Notal Head of Editions</font></b></p>
+<table id="outputTable" border="1" width="100%">
+	<tr>
+		<td bgcolor="#008080" width="6%"><font color="#FFFFFF" face="Verdana"><b>Sl. No</b></font></td>
+		<td bgcolor="#008080" width="13%"><font color="#FFFFFF" face="Verdana"><b>Name</b></font></td>
+		<td bgcolor="#008080" width="14%"><b>
+		<font face="Verdana" color="#FFFFFF">Nodal Head (Edition</font></b></td>
+		<td bgcolor="#008080" width="9%"><b>
+		<font face="Verdana" color="#FFFFFF">District</font></b></td>
+		<td bgcolor="#008080" width="9%"><b>
+		<font face="Verdana" color="#FFFFFF">No. of Districts</font></b></td>
+	</tr>
+	<tr>
+		<td width="6%">01</td>
+		<td width="13%"><b>Anupam Praharaj</b><p>News Editor (I/C)</td>
+		<td width="14%">
+		<ul>
+			<li>Sambalpur</li>
+			<li>Raourkela</li>
+			<li>Bolangir </li>
+		</ul>
+		</td>
+		<td width="9%">Sambalpur, Deogarh, Jharsuguda, Sundargarh, Baragarh, 
+		Boudha,, Subarnapur, Balanigr, Kalahandi &amp; Nuapada</td>
+		<td width="9%">10</td>
+	</tr>
+	<tr>
+		<td width="6%">02.</td>
+		<td width="13%"><b>Kali Prasanna Satapathy</b><p>News Editor (I/C)</td>
+		<td width="14%">
+		<ul>
+			<li>Cuttack</li>
+			<li>Angul</li>
+		</ul>
+		</td>
+		<td width="9%">Cuttack, Jagatsinghpur, Kendraparea, Jajpur, Keojhar, 
+		Dhenkanal &amp; Angul</td>
+		<td width="9%">07</td>
+	</tr>
+	<tr>
+		<td width="6%">03.</td>
+		<td width="13%"><b>Sudarsan Nayak</b><p>Sr. Sub-Editor</td>
+		<td width="14%">
+		<ul>
+			<li>Berhampur</li>
+			<li>Koraput</li>
+		</ul>
+		</td>
+		<td width="9%">Ganjam, Kandhamal, Gajapati, Rayagada, Nabarangpur, 
+		Koraput &amp; Malkangiri</td>
+		<td width="9%">07</td>
+	</tr>
+	<tr>
+		<td width="6%">04.</td>
+		<td width="13%"><b>Gopinath Barik</b><p>Dy. Chief Sub-Editor &amp; Bureau 
+		Chief (I/c)</td>
+		<td width="14%">
+		<ul>
+			<li>Bhubaneswar</li>
+			<li>Baleswar</li>
+		</ul>
+		</td>
+		<td width="9%">Khurdha, Nayagarh, Puri, Bhadrak, Baleswar &amp; Mayurbhanj</td>
+		<td width="9%">06</td>
+	</tr>
+	</table>
+<p>&nbsp;</p>
+
+</body>
+
+</html>
